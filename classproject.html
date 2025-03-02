@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: comic sans ms;
+        background-color: hsl(59, 77%, 79%);
+        color: rgb(233, 117, 185);
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Eat & Tell 🍔🗣</h1>
+    <form
+      action="/action_page.php"
+      oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3"
+    >
+      <fieldset>
+        <legend>Basic Questions:</legend>
+        <label>What is your favorite food?</label><br />
+        <input type="food" id="chocolate" /> <br />
+        <br />
+
+        <label>Why do you love this food? (Short description)</label><br />
+        <input type="food" id="chocolate" /> <br />
+        <br />
+
+        <label
+          >How often do you eat it? (mention: Daily, Weekly, Monthly,
+          Rarely)</label
+        ><br />
+        <input type="password" id="contact" /> <br />
+        <br />
+
+        <label>Would you like to try cooking it yourself?</label><br />
+        <input type="radio" id="Yes" name="choocolate" value="Yes" />Yes
+        <br />
+        <input type="radio" id="No" name="chocolate" value="No" />No <br />
+        <br />
+
+        <label>What types of food do you avoid?</label><br />
+        <input
+          type="Checkbox"
+          id="Ice cream"
+          name="Vegetarian"
+          value="Vegetarian"
+        />Vegetarian
+
+        <br />
+        <input
+          type="Checkbox"
+          id="Ice cream"
+          name="Fast Food"
+          value="Fast Food"
+        />Fast Food
+        <br />
+        <input
+          type="Checkbox"
+          id="Ice cream"
+          name="No sugar"
+          value="No sugar"
+        />No sugar
+        <br />
+        <input
+          type="Checkbox"
+          id="Ice cream"
+          name=" Low-carb"
+          value=" Low-carb"
+        />
+        Low-carb
+        <br />
+        <br />
+
+        <label>When did you last eat your favorite food?</label>
+        <input type="date" name="Last ate" /> <br />
+        <br />
+
+        <label>Answer any one of all the questions. </label><br />
+
+        <select name="Subject" id="subject">
+          <option value="Maths">Do you share it with others?</option>
+          <option value="Maths">Would you recommend it to a friend?</option>
+          <option value="Maths">Do you dream about your favorite food?</option>
+          <option value="Maths">Is it a breakfast food for you?</option>
+          <option value="Maths">Can you eat it cold or only hot?</option>
+          <option value="Maths">Do you prefer it with sauce?</option>
+        </select>
+
+        <input type="number" id="m1" name="m1" /> <br />
+        <br />
+
+        Done? <output name="x" for="m1 m2 m3"></output>
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
